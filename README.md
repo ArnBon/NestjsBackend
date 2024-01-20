@@ -71,3 +71,14 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Curso de Angular 20-01-2024
+
+
+# Backend en Nest
+
+```
+docker compose up -d
+```
+
+Copiar el ```.env.template``` y renombrarlo a ```.env```
