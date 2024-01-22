@@ -8,6 +8,7 @@ import { UpdateAuthDto } from './dto/update-auth.dto';
 import { CreateUserDto } from './dto/create-user.dto';
 import { LoginDto } from './dto/login.dto';
 import { JwtPayload } from './interfaces/jwt-payload';
+import { LoginResponse } from './interfaces/login-response';
 
 
 
@@ -39,7 +40,7 @@ export class AuthService {
     }
   }
 
-  async login( loginDto: LoginDto ) {
+  async login( loginDto: LoginDto ):Promise<LoginResponse> {
 
     const { email, password } = loginDto;
 
@@ -60,6 +61,11 @@ export class AuthService {
       token: this.getJwtToken({ id: user.id }),
     }
   
+  }
+
+  async register( ): Promise<LoginResponse> {
+
+    
   }
 
   findAll() {
